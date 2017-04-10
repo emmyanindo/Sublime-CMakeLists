@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+set(${1:name} ${2:value} ${3:CACHE ${4:type-of-${1:name}} ${5:"${6:documentation for ${1:name}}"} ${7:FORCE}} ${8:PARENT_SCOPE})
+]]></content>
+    <tabTrigger>set</tabTrigger>
+    <scope>source.cmake</scope>
+</snippet>
