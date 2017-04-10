@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+foreach(${1:item} \${${2:items}})
+	$0
+endforeach(${1:item})
+]]></content>
+    <tabTrigger>foreach</tabTrigger>
+    <scope>source.cmake</scope>
+</snippet>
