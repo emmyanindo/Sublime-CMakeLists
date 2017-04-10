@@ -1,0 +1,44 @@
+[
+    {
+        "keys": ["$"], 
+        "command": "insert_snippet", 
+        "args": 
+        {
+            "contents": "${1:\\${$SELECTION\\}}"
+        },
+        "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.cmake - comment", "match_all": true },
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+        ]
+    },
+    {
+        "keys": [">"],
+        "command": "insert_snippet",
+        "args":
+        {
+            "contents": "\\$<${1:$SELECTION}:${2:expression}>"
+        },
+        "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.cmake - comment", "match_all": true },
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+        ]
+    },
+    {
+        "keys": ["<"],
+        "command": "insert_snippet",
+        "args":
+        {
+            "contents": "\\$<${1:$SELECTION}>"
+        },
+        "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.cmake - comment", "match_all": true },
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+        ]
+    }
+]
