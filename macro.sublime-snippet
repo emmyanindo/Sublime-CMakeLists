@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+macro(${1:name-of-the-macro} ${2:#[[arguments]]})
+	$0
+endmacro(${1:name-of-the-macro})
+]]></content>
+    <tabTrigger>macro</tabTrigger>
+    <scope>source.cmake</scope>
+</snippet>
