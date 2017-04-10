@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+function(${1:name-of-the-function} ${2:#[[arguments]]})
+	$0
+endfunction(${1:name-of-the-function})
+]]></content>
+    <tabTrigger>function</tabTrigger>
+    <scope>source.cmake</scope>
+</snippet>
